@@ -1,0 +1,53 @@
+# ----------------------
+# Visual Studio
+# ----------------------
+
+## 사용자 파일
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## 빌드 결과물
+[Bb]in/
+[Oo]bj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.ilk
+*.log
+
+## Visual Studio 관련 폴더
+.vs/
+*.VC.db
+*.VC.opendb
+
+## 임시 파일
+*.tmp
+*.bak
+*.old
+*.swp
+
+## 기타 불필요한 것들
+*.ipch
+*.aps
+*.ncb
+*.sdf
+*.opensdf
+*.vsidx
+
+# CMake 관련
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Windows thumbs
+Thumbs.db
+ehthumbs.db
+
+# Visual Studio
+*.sln
+*.vcxproj
+*.vcxproj.*

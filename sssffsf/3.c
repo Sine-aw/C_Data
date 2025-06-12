@@ -3,51 +3,29 @@
 
 int main()
 {
-	char class;
-	int num;
-	int c;
-	int java;
-	int pyth;
-	int tot;
-	double avg;
-	char e;
-	int k = 1;
+	int n, res;
 
-	while (k = 1)
-	{
-		printf("학번을 입력하세요 : ");
-		scanf("%d", &num);
+	printf("정수 입력 : ");
+	scanf("%d", &n);
 
-		printf("반(A ~ C)을 입력하세요 : ");
-		scanf(" %c", &class);
+	printf("----------------------------------\n");
 
-		printf("c언어 점수를 입력하세요 : ");
-		scanf("%d", &c);
+	res = func(n);
 
-		printf("자바 점수를 입력하세요 : ");
-		scanf("%d", &java);
-
-		printf("파이썬 점수를 입력하세요 : ");
-		scanf("%d", &pyth);
-
-		tot = c + java + pyth;
-
-		avg = (double)tot / 3;
-
-		printf("총점 : %d\t 평균 : %.2f\n", tot, avg);
-
-		printf("-------------------------------------------------\n");
-		printf("계산을 종료 하시겠습니까? (y / n)");
-		scanf(" %c", &e);
-
-		if (e == 'y' || e == 'Y')
-		{
-			//k = 0;
-			break;
-		}
-	}
-	
-	printf("종료합니다\n");
+	printf("결과 : %d\n", res);
 
 	return 0;
+}
+
+int func(int n)
+{
+	if (n == 1)
+	{
+		return 1;
+	}
+
+	else
+	{
+		return n * func(n - 1);
+	}
 }
